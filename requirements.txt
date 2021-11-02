@@ -1,0 +1,8 @@
+easydict==1.9
+networkx==2.5.1
+numpy==1.19.5
+scikit_learn==1.0.1
+scipy==1.7.0
+tensorflow==2.6.1
+tensorflow_gpu==2.6.0
+tqdm==4.61.2
