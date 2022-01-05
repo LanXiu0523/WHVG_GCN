@@ -457,8 +457,8 @@ Graph_index_CUR += FaultData_Graph_size
 
 
 
-f_HVG = open("HVG.txt","w")
-f_HVG.write(str(Graph_size)+"\n")
+f_VG = open("VG.txt","w")
+f_VG.write(str(Graph_size)+"\n")
 for Graph_index in range(Graph_size):
     if Graph_index < NormalData_Graph_size:
         Label = 0
@@ -468,13 +468,13 @@ for Graph_index in range(Graph_size):
         Label %= 3
         Label += 1
         
-    f_HVG.write(str(Data_size)+" "+str(Label)+"\n")
+    f_VG.write(str(Data_size)+" "+str(Label)+"\n")
     
     for Node_index in range(Data_size):
-        f_HVG.write("0 "+str(len(Graph[Graph_index][Node_index])))
+        f_VG.write("0 "+str(len(Graph[Graph_index][Node_index])))
         for Edge_index in range(len(Graph[Graph_index][Node_index])):
-            f_HVG.write(" "+str(Graph[Graph_index][Node_index][Edge_index]))
-        f_HVG.write("\n")
-f_HVG.close()
+            f_VG.write(" "+str(Graph[Graph_index][Node_index][Edge_index]))
+        f_VG.write("\n")
+f_VG.close()
 
 
