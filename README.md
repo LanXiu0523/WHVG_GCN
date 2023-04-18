@@ -1,22 +1,4 @@
-# 基于WHVG和GCN_GIN+的滚动轴承故障诊断
+### 对Fault_Diagnosis_of_Rolling_Bearing_Based_on_WHVG_and_GCN论文的复现，论文地址:<https://ieeexplore.ieee.org/abstract/document/9449834>
 
-
-
-### Part1：
-
-#### 	SDtoHVG目录：
-
-#### 		功能是将时间序列转化为水平可视图(HVG)
-
-### Part2：
-
-#### 	GCN_GIN+目录：
-
-#### 		功能是将HVG加权后放入GIN网络中学习以达到分类的目的
-
-
-
-### 原理：
-
-​	**采用一种包含加权水平可见图(WHVG)的图卷积网络(GCN)，对采样的轴承震动时间序列数据分析，进行滚动轴承故障诊断。HVG用于从几何角度将时间序列转换为图形数据。对HVG中两节点的边，以节点距离的倒数作为权重进行加权，以削弱噪声节点对其他距离较远节点的影响。此外，将图同构网络(GIN)改进为GIN+，在聚合层定义中引入权重指标，以更好地拟合WHVG的拓扑特征，并学习图的表征并进行故障分类。最后，通过CWRU的轴承数据集证明了WHVG和GIN的高效性能。**
-
+### 参考文献：
+[1] Li C, Mo L, Yan R. Fault diagnosis of rolling bearing based on WHVG and GCN[J]. IEEE Transactions on Instrumentation and Measurement, 2021, 70: 1-11.
